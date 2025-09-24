@@ -1,0 +1,16 @@
+[general]
+name=Synchro Retour terrain
+description= Ce plugin permet de mettre à jour une couche principale (couche cible) à partir d'une couche de terrain (couche source). 
+about= 	
+- La couche source et la couche cible doivent avoir une même structure attributraire.  
+- La couche doit avoir un identifiant unique (IDU par défaut). Le plugin vérifie la présence et l'unicité de cet identifiant dans les deux couches.
+  * Il est conseillé d'utiliser un identifiant généré automatiquement de façon aléatoire, par exemple avec la fonction uuid() de Qgis. Les identifiants incrémentés de type SERIAL sont à proscrire en cas de contributeurs mutliples.
+
+- Une option permet d'appliquer les modifications sur une entité uniquement si un champ "date de mise à jour" (date_maj par défaut) est plus récent dans la couche source que dans la couche cible. L'objctif est d'éviter qu'un contributeur écrase les données chargées par un autre contributeur. 
+  * Il est conseillé d'utiliser un champ date_maj de type date et mis à jour automatiquement dans le formulaire de la couche terrain. 
+version=0.1
+qgisMinimumVersion=3.28
+author= Clement Dutremble - SMAVD
+email=clement.dutremble@smavd.org
+repository=https://github.com/smavd/Synchro-retour-terrain
+icon=icon.png
