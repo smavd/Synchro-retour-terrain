@@ -8,7 +8,7 @@ Ce plugin automatise l'ajout et la mise à jour d'entités depuis une couche sou
 Shapefile ; geopackage
 
 -----------------
-Pré-requis : 
+# Pré-requis : 
 
 - Version Qgis : 3.28 to 3.40
 - Système d'exploitation : Windows (les autres n'ont pas été testé)
@@ -16,8 +16,8 @@ Pré-requis :
 -----------------
 
 # Installation : 
-1 - téléhcrager le fichier zip
-2 - dans Qgis > Menu Extensions > Installer / Gérer des extensions > Installer depuis un zip > Choisir le zip du plugin et l'installer
+- téléhcrager le fichier zip
+- dans Qgis > Menu Extensions > Installer / Gérer des extensions > Installer depuis un zip > Choisir le zip du plugin et l'installer
 
 -----------------
 
@@ -31,7 +31,7 @@ Pré-requis :
 
 -----------------
 
-Changelog :
+# Changelog :
 -- V 0.1
     Version initiale
 
