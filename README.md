@@ -27,7 +27,7 @@ Shapefile ; geopackage
   * Il est conseillé d'utiliser un identifiant généré automatiquement de façon aléatoire, par exemple avec la fonction uuid() de Qgis. Les identifiants incrémentés de type SERIAL sont à proscrire en cas de contributeurs mutliples.
 
 - Une option permet d'appliquer les modifications sur une entité uniquement si un champ "date de mise à jour" (date_maj par défaut) est plus récent dans la couche source que dans la couche cible. L'objctif est d'éviter qu'un contributeur écrase les données chargées par un autre contributeur. 
-  * Il est conseillé d'utiliser un champ date_maj de type date et mis à jour automatiquement dans le formulaire de la couche terrain. 
+  * Il est conseillé d'utiliser un champ date_maj de type DateTime et mis à jour automatiquement dans le formulaire de la couche terrain. 
 
 -----------------
 
