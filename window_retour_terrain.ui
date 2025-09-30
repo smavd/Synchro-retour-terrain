@@ -140,7 +140,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>Cocher cette option pour que les entités de la couche cible ne soient mises à jour que si la date de mise à jour est plus récente dans la couche terrain. </string>
+         <string>Cette option permet d'appliquer la mise à jour seulement sur les données avec une date de mise à jour plus récente que celle de la couche cible. </string>
         </property>
        </widget>
       </widget>

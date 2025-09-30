@@ -1,6 +1,9 @@
 """
 Module Principal du plugin synchro retour terrain
-
+Todo : 
+    Couches géopackage pour la target layer. 
+    Si couches invalides ou mauvaise structure : Qmessage box et retour à la fenetre de base. 
+    choix du IDU : faire une combobox
 """
 
 from pathlib import Path
@@ -37,10 +40,9 @@ class WindowRetourTerrain(QDialog):
         return self.MapLayerComboBox_target
 
     def check_source_format(self):
-        """
-        Vérifie si la couche source donnée par l'utilisateur est bien au format shapefile ou gpkg.
-        Si la couche entrée a un format différent, un message d'erreur apparait. 
-        """
+        ''' Méthode qui vérifie si la couche source donnée par l'utilisateur est bien au format shapefile ou gpkg.
+            Si la couche entrée a un format différent, un message d'erreur apparait. 
+        '''
         source_layer_path =  str(self.mQgsFileWidget_source.filePath())
         print(source_layer_path)
         if source_layer_path == '':

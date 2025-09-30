@@ -11,5 +11,5 @@ version=1.2
 qgisMinimumVersion=3.28
 author= Clement Dutremble - SMAVD
 email=clement.dutremble@smavd.org
-repository=https://github.com/smavd/Synchro-retour-terrain
+repository=URL to the code repository
 icon=icon.png
