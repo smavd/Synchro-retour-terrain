@@ -22,7 +22,7 @@ from PyQt5.QtCore import Qt
 from qgis.utils import iface
 from qgis.core import Qgis, QgsMapLayerType, QgsProject, QgsMapLayer
 from PyQt5.QtGui import QIcon
-from synchro_retour_terrain.window_retour_terrain import WindowRetourTerrain # Vs Code ne trouve pas le module situé dans le même dossier mais Qgis le trouvera bien. 
+from synchro_retour_terrain_main.window_retour_terrain import WindowRetourTerrain # Vs Code ne trouve pas le module situé dans le même dossier mais Qgis le trouvera bien. 
 
 
 def classFactory(iface):
