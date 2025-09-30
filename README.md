@@ -16,7 +16,7 @@ Shapefile ; geopackage
 -----------------
 
 # Installation : 
-- téléhcrager le fichier zip
+- téléhcrager le zip synchro_retour_terrain.zip
 - dans Qgis > Menu Extensions > Installer / Gérer des extensions > Installer depuis un zip > Choisir le zip du plugin et l'installer
 
 -----------------
