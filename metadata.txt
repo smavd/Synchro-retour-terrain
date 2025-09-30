@@ -1,14 +1,13 @@
 [general]
 name=Synchro Retour terrain
 description= Ce plugin permet de mettre à jour une couche principale (couche cible) à partir d'une couche de terrain (couche source). 
-about= 	
-- La couche source et la couche cible doivent avoir une même structure attributraire.  
-- La couche doit avoir un identifiant unique (IDU par défaut). Le plugin vérifie la présence et l'unicité de cet identifiant dans les deux couches.
-  * Il est conseillé d'utiliser un identifiant généré automatiquement de façon aléatoire, par exemple avec la fonction uuid() de Qgis. Les identifiants incrémentés de type SERIAL sont à proscrire en cas de contributeurs mutliples.
-
-- Une option permet d'appliquer les modifications sur une entité uniquement si un champ "date de mise à jour" (date_maj par défaut) est plus récent dans la couche source que dans la couche cible. L'objctif est d'éviter qu'un contributeur écrase les données chargées par un autre contributeur. 
-  * Il est conseillé d'utiliser un champ date_maj de type date et mis à jour automatiquement dans le formulaire de la couche terrain. 
-version=0.1
+about= 	La couche source et la couche cible doivent avoir une même structure attributraire et avoir un identifiant unique (IDU par défaut). 
+		Le plugin vérifie la présence et l'unicité de cet identifiant dans les deux couches. 
+		Il est conseillé de générer automatiquement l'identifiant unique dans votre application de terrain avec la fonction uuid() Qgis pour eviter de possibles conflits de données entre plusieurs contributeurs de la donnée cible. 
+		Les couches en entrée doivent avoir un champ de type date-heure ou texte avec la date de mise à jour ("date_maj") par défaut. 
+		Il est conseillé de régler la valeur par défaut dans le fomulaire de la couche de terrain pour que la date soit saisie automatiquement lors de chaque mise à jour. (fonction now())
+		Le plugin vérifié les date_maj des couches cibles et source et ne met à jour la couche cible que si la date_maj de la couche cible est antérieur à la date_maj de la couche source. Celà permet d'éviter l'écréasement des données en cas de saisie terrain sur une couche source antérieur à la couche cible du projet principal.
+version=1.2
 qgisMinimumVersion=3.28
 author= Clement Dutremble - SMAVD
 email=clement.dutremble@smavd.org
